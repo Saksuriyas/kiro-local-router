@@ -57,7 +57,7 @@ Kiro CLI / IDE  ──(agent: docs-writer)──▶  Kiro model (AWS)   ← sees
 
 | OS | How |
 |---|---|
-| Linux | `curl -fsSL https://ollama.com/install.sh | sh` |
+| Linux | `curl -fsSL https://ollama.com/install.sh \| sh` |
 | macOS | `brew install ollama` or download the app from <https://ollama.com/download> |
 | Windows | Download the installer from <https://ollama.com/download> |
 

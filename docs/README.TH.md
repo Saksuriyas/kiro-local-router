@@ -57,7 +57,7 @@ Kiro CLI / IDE  ──(agent: docs-writer)──▶  Kiro model (AWS)   ← เ�
 
 | OS | วิธี |
 |---|---|
-| Linux | `curl -fsSL https://ollama.com/install.sh | sh` |
+| Linux | `curl -fsSL https://ollama.com/install.sh \| sh` |
 | macOS | `brew install ollama` หรือโหลดแอปจาก <https://ollama.com/download> |
 | Windows | โหลดตัวติดตั้งจาก <https://ollama.com/download> |
 
