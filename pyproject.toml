@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kiro-localllm"
+version = "0.1.0"
+description = "MCP server that lets Kiro agents offload documentation-type work to a local LLM (Ollama) or other providers"
+requires-python = ">=3.10"
+dependencies = ["mcp>=1.2.0,<2", "httpx>=0.27"]
+
+[project.scripts]
+kiro-localllm = "kiro_localllm.server:main"
+
+[tool.setuptools.packages.find]
+include = ["kiro_localllm*"]

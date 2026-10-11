@@ -1,0 +1,20 @@
+"""Tiny sample service used to try the docs-writer agent."""
+import os
+from http.server import BaseHTTPRequestHandler, HTTPServer
+
+PORT = int(os.getenv("PORT", "8080"))
+
+
+class Handler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        if self.path == "/health":
+            self.send_response(200)
+            self.end_headers()
+            self.wfile.write(b"ok")
+        else:
+            self.send_response(404)
+            self.end_headers()
+
+
+if __name__ == "__main__":
+    HTTPServer(("0.0.0.0", PORT), Handler).serve_forever()
